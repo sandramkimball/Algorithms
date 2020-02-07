@@ -3,6 +3,9 @@
 import sys
 
 def making_change(amount, denominations):
+  # divide amount by denominations
+  for i in range(len(amount)-1):
+    
   pass 
 
 
