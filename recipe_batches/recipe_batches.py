@@ -4,9 +4,9 @@ import math
 
 def recipe_batches(recipe, ingredients):
   batches = 0
-  enough_ing = 0
-  i = recipe[i]
-  j = ingredients[j]
+  enough_ing = []
+  # i = recipe[i]
+  # j = ingredients[j]
 
   for k, v in recipe:
    for k, v in ingredients:
