@@ -2,7 +2,9 @@
 
 import argparse
 
-def find_max_profit(prices):
+cache = {}
+
+def find_max_profit(prices, cache=None):
   if prices in cache.keys():
     return cache[prices]
 

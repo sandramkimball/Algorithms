@@ -5,12 +5,12 @@ import sys
 # The cache parameter is to implement a solution that is more efficient than recursive solution.
 # Factorial Function?
 def eating_cookies(n, cache=None):
-  ways=1
+  ways = 1
   if n in cache.keys():
     return cache[n]
     
   for i in range(1, n+1):
-    ways *=i
+    ways *= i
   
   cache[n] = ways
   return ways

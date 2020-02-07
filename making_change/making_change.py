@@ -1,11 +1,10 @@
 #!/usr/bin/python
 
 import sys
-
+#                   $1  ,   .10
 def making_change(amount, denominations):
-  # divide amount by denominations
+  # divide amount by denominations? multiply?
   for i in range(len(amount)-1):
-    
   pass 
 
 
