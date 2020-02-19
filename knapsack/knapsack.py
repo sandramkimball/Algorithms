@@ -21,15 +21,14 @@ def knapsack_solver(items, capacity):
         total_size += items.size
       return total_size
     return 1  
-    
-  item_combos.append( knapsack_solver(items, capacity-items.size) )       
+
+  item_combos.append( knapsack_solver(items, total_size) )       
   
   #add? multiply? compare all combos
   #now check for which arr has the highest value? recursive sort func?
-  total_value = 0
-
   def value_func(i):
-     total_value += i.value
+    total_value = 0
+    total_value = (total_value + i.value)
 
   for i in item_combos:
     if value_func(i) > value_func(i+1):
