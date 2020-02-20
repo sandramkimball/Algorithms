@@ -2,7 +2,7 @@
 
 import math
 
-def recipe_batches(recipe, ingredients):
+def recipe_batches(recipe, ingredients, cache=None):
   batches = 0
   
   for i in range(0, len(ingredients)):
