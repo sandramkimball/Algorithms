@@ -2,8 +2,21 @@
 
 import argparse
 
-def find_max_profit(prices):
-  pass
+cache = {}
+
+def find_max_profit(prices, cache=None):
+  if prices == 0:
+    return 0
+  if prices == 1:
+    return 1
+  elif cache and cache[prices] > 0:
+    return cache[prices]
+  else: 
+    if not cache: 
+      cache = {num: 0 for num in range(prices + 1)}
+    profit = find_max_profit(prices-1, cache) + find_max_profit(prices-2, cache) + find_max_profit(prices-3, cache)
+    cache[prices] = profit
+  print( profit)
 
 
 if __name__ == '__main__':

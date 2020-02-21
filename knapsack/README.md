@@ -11,23 +11,22 @@ A bit more motivation - this is a very general optimization problem that can be 
 The specific goal of this exercise is to write a program that takes input files that look like this:
 
 ```
-1 42 81
-2 42 42
-3 68 56
-4 68 25
-5 77 14
-6 57 63
-7 17 75
-8 19 41
-9 94 19
+Ix Sz Vl
+1  42 81
+2  42 42
+3  68 56
+4  68 25
+5  77 14
+6  57 63
+7  17 75
+8  19 41
+9  94 19
 10 34 12
 ```
 
 The first row number is just a row/observation number, to facilitate reading and referring to items. The second number is the size/cost of the item, i.e. the cost of putting it in your knapsack. The third number is the value, i.e. the utility/payoff you get for selecting that item. The program should also take as input a total size, which can just be a number passed from the command line. So execution may look like this: `python knapsack.py input.txt 100`.
 
-The goal is to select a subset of the items to maximize the payoff such that the cost is below some threshold. That is, the output should be a set of items (identified by number) that solves the Knapsack problem. It's also worth outputting the total cost and value of these items. This can all just be printed and may look something like below.
-
-This is *not* a solution, just an example:
+The goal is to select a subset of the items to maximize the payoff such that the cost is below some threshold. That is, the output should be a set of items (identified by number) that solves the Knapsack problem. It's also worth outputting the total cost and value of these items. This can all just be printed and may look something like below:
 
 ```
 Items to select: 2, 8, 10
